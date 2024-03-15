@@ -1,0 +1,83 @@
+/* Not the cleanest CSS/UI ever, I know. I'll fix later */
+#root {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.TodoElement {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  column-gap: 15px;
+  border-radius: 12px;
+  background-color: #4a4a4a;
+  padding: 15px;
+  align-items: center;
+}
+
+.TaskText {
+  font-weight: 500;
+  margin: 0px;
+}
+
+.TaskCheck {
+  min-width: 25px;
+  min-height: 25px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.TaskInput {
+  min-height: 25px;
+}
+
+.transparent {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.transparent:hover {
+  box-shadow: none;
+}
+
+.TodoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  gap: 15px;
+  padding: 15px;
+  height: 90vh;
+  width: 100%;
+
+  background-color: #4a4a4a;
+}
+
+.TodoElementContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  
+  gap: 15px;
+  padding: 15px;
+  height: 80%;
+  width: 85%;
+  border-radius: 12px;
+
+  background-color: #242424;
+}
+
+.TodoCreatorContainer {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
