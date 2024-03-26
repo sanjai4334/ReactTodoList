@@ -76,4 +76,4 @@ Here are some ways you can contribute:
 
 
 ## Screenshots
-<image src="screenshots/todoList.png" alt="todo list" width="250"/>
+<image src="screenshots/todoList.png" alt="todo list" height="300"/>
