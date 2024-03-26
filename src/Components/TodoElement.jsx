@@ -69,16 +69,18 @@ class TodoElement extends Component {
                 this.state.isChecked ? this.unCheck() : this.check()
               }
             />
-            {/* Task text */}
-            <p className={taskTextClass}>{this.state.taskText}</p>
-            {/* Button to edit the task text */}
-            <button className="transparent" onClick={this.editText}>
-              <img src="./src/assets/edit.png" alt="Edit" />
-            </button>
-            {/* Button to delete the todo element */}
-            <button className="transparent" onClick={this.deleteElement}>
-              <img src="./src/assets/delete.png" alt="Delete" />
-            </button>
+            <div className="taskControls">
+              {/* Task text */}
+              <p className={taskTextClass}>{this.state.taskText}</p>
+              {/* Button to edit the task text */}
+              <button className="transparent" onClick={this.editText}>
+                <img src="./src/assets/edit.svg" alt="Edit" />
+              </button>
+              {/* Button to delete the todo element */}
+              <button className="transparent" onClick={this.deleteElement}>
+                <img src="./src/assets/delete.svg" alt="Delete" />
+              </button>
+            </div>
           </div>
         </>
       );
